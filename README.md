@@ -1,27 +1,44 @@
 # Netflix Data Analysis using Python
 
-This project analyzes Netflix content using Python.
+## Project Overview
 
-## Tools Used
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
+This project performs Exploratory Data Analysis (EDA) on the Netflix dataset to understand trends in movies and TV shows available on the platform.
+
+## Technologies Used
+
+* Python
+* Pandas
+* Matplotlib
+* Seaborn
 
 ## Analysis Performed
-- Movies vs TV Shows distribution
-- Content release trend over years
-- Top countries producing Netflix content
-- Most common genres on Netflix
+
+1. Movies vs TV Shows distribution
+2. Content release trends over the years
+3. Top countries producing Netflix content
+4. Most common genres available on Netflix
 
 ## Dataset
-Netflix dataset containing movies and TV shows available on the platform.
 
-## Output  author
-The project generates visualizations to understand Netflix content trends.
+Netflix movies and TV shows dataset.
 
-Author
+## Insights
+
+* Netflix has more movies than TV shows
+* Content production increased significantly after 2015
+* The United States produces the highest number of titles
+
+## How to Run
+
+1. Install dependencies
+pip install -r requirements.txt
+
+2. Run the script
+python netflix_analysis.py
+
+## Author
 Kanaka V Y
 B.E in Artificial intelligence and machine learning
 Don Bosco Institute of Technology Bengaluru
+
 
