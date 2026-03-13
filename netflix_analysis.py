@@ -16,6 +16,7 @@ sns.barplot(x=type_count.index, y=type_count.values)
 plt.title("Movies vs TV Shows on Netflix")
 plt.xlabel("Type")
 plt.ylabel("Count")
+plt.savefig("movies_vs_tvshows.png")
 plt.show()
 
 # Release year trend
@@ -26,6 +27,7 @@ year_data.plot()
 plt.title("Content Release Over Years")
 plt.xlabel("Year")
 plt.ylabel("Number of Titles")
+plt.savefig("release_year_trend.png")
 plt.show()
 
 # Top countries producing Netflix content
@@ -37,9 +39,9 @@ sns.barplot(x=top_countries.values, y=top_countries.index)
 plt.title("Top 10 Countries Producing Netflix Content")
 plt.xlabel("Number of Titles")
 plt.ylabel("Country")
+plt.savefig("top_countries.png")
 
 plt.show()
-
 
 # Top genres
 top_genres = data['listed_in'].str.split(', ').explode().value_counts().head(10)
@@ -50,5 +52,6 @@ sns.barplot(x=top_genres.values, y=top_genres.index)
 plt.title("Top 10 Netflix Genres")
 plt.xlabel("Number of Titles")
 plt.ylabel("Genre")
+plt.savefig("top_genres.png")
 
 plt.show()
